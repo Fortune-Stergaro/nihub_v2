@@ -17,12 +17,14 @@ const ServicesHero = () => {
                 
                 <div className='pt-10'>
                     <SectionHeaderText  text='What We Offer'/>
-                    <Bai_700  text='Services Built ' className='w-fit pt-5 base-purple-text text-[48px] md:text-[72px] leading-[48.96px] md:leading-[73.44px] -tracking-[1px] uppercase'/>
+                    <Bai_700  text='Services Built ' className='md:block hidden w-fit pt-5 base-purple-text text-[48px] md:text-[72px] leading-[48.96px] md:leading-[73.44px] -tracking-[1px] uppercase'/>
 
                     <div className='grid md:grid-cols-2 md:gap-20 gap-14'>
-                        <div>
-                            <div className='  -tracking-[1px] text-[48px] md:text-[72px] leading-[48.96px] md:leading-[73.44px]'>
-                                <Bai_700  text='To Launch You' className='md:w-fit w-min clarity-text-gradient uppercase' />
+                        <div className="pt-5 md:pt-0">
+                            <Bai_700  text='Services Built ' className='inline md:hidden w-fit  base-purple-text text-[48px] md:text-[72px] leading-[48.96px] md:leading-[73.44px] -tracking-[1px] uppercase'/>
+
+                            <div className=' md:block inline -tracking-[1px] text-[48px] md:text-[72px] leading-[48.96px] md:leading-[73.44px]'>
+                                <Bai_700  text='To Launch You' className='md:block inline  md:w-fit md:w-min clarity-text-gradient uppercase' />
                             </div>
 
                             <div className='pt-6 text-[17px] leading-[30.6px] base-purple-text-100  '>
@@ -30,7 +32,7 @@ const ServicesHero = () => {
                             </div>
 
                             
-                            <div className='flex items-center space-x-3 pt-10'>
+                            <div className='flex flex-wrap items-center space-x-3 space-y-3 pt-10'>
                                 <LinkTemp1 href="/services" className='px-6 py-3 text-[13px] w-fit h-fit base-purple-bg text-white rounded-[10px] link-shadow' text='Get Started' linkIndex={0} />
                                 <LinkTemp1 href="/services" className='px-6 py-3 text-[13px] w-fit h-fit border border-[#2B104340] base-purple-text rounded-[10px]'  text='Contact Us'  linkIndex={1}/>
                             </div>
@@ -42,8 +44,8 @@ const ServicesHero = () => {
                                         <service.icon color={`rgb(${service.rgb})`} width='22' height='22' />
                                     </div>
                                     <div>
-                                        <Bai_700 className='text-[12px] base-purple-text' text={service.label} />
-                                        <Jet_400  className='text-[10px] base-purple-text-300' text={service.description}/>
+                                        <Bai_700 className='text-[10px] md:text-[12px]    base-purple-text' text={service.label} />
+                                        <Jet_400  className='text-[10px] smaller-text-8 base-purple-text-300' text={service.description}/>
                                     </div>
                                 </div>
                             ))}

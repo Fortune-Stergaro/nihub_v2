@@ -16,7 +16,7 @@ const ImpactSection = () => {
         
 
 
-        <div className="flex flex-col items-center text-center ">
+        <div className="flex flex-col items-center text-center px-6">
             <SectionHeaderText text="Impact & Recognition" />
             <div className="pt-4" />
             <SectionSubHeaderText text2="Our Impact in Numbers"/>
@@ -25,8 +25,8 @@ const ImpactSection = () => {
         <ul className="grid grid-cols-2 md:grid-cols-4 pt-14 gap-10 md:gap-auto common-max-width mx-auto">
             {ImpactStats.map((stat, index) => (
                 <li key={index}  className="flex flex-col items-center justify-center md:px-4 px-10 text-center ">
-                    <Bai_700 className="text-[50px] md:text-[58px] tracking-[-1.5px] leading-[50px] md:leading-[58px] base-purple-text" text={stat.value} /> 
-                    <Bai_600 className="text-[12px] md:text-[16px] tracking-[1.2px] leading-[18px] md:leading-[16px] uppercase pt-2 base-purple-text-200" text={stat.label}/>
+                    <Bai_700 className="text-[50px] md:text-[58px] smaller-text-36 tracking-[-1.5px] leading-[50px] md:leading-[58px] base-purple-text " text={stat.value} /> 
+                    <Bai_600 className="text-[12px] md:text-[16px]  smaller-text-10 tracking-[1.2px]  md:leading-[16px] uppercase pt-2 base-purple-text-200" text={stat.label}/>
                 </li>
             ))}
         </ul>

@@ -245,6 +245,19 @@ section {
 
 }
 
+.smaller-text-size {
+  @media (width < 40rem /* 546*/) {
+      font-size: 24px;
+      line-height: 36px;
+  }
+}
+
+.smaller-section-header-text {
+    @media (width < 40rem /* 546*/) {
+      font-size: 9px;
+  }
+}
+
 .icon-box-bg {
   background-color: #2B104314;
   
@@ -291,4 +304,49 @@ section {
 
 .story-cta-gradient {
   background: radial-gradient(60% 80% at 100% 50%, rgba(255, 178, 52, 0.12) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+
+.smaller-text-8 {
+      @media (width < 40rem /* 546*/) {
+      font-size: 36px;
+  }
+}
+
+.smaller-text-9 {
+      @media (width < 40rem /* 546*/) {
+      font-size: 10px;
+      line-height: 14px;
+  }
+}
+
+
+
+.smaller-text-10 {
+      @media (width < 40rem /* 546*/) {
+      font-size: 10px;
+      line-height: 14px;
+  }
+}
+
+.smaller-text-11 {
+      @media (width < 40rem /* 546*/) {
+      font-size: 11px;
+  }
+}
+
+.smaller-text-12 {
+      @media (width < 40rem /* 546*/) {
+      font-size: 11px;
+      line-height: 16px;
+
+  }
+}
+
+.smaller-text-36 {
+      @media (width < 40rem /* 546*/) {
+      font-size: 36px;
+      line-height: 36px;
+  }
+
 }

@@ -9,7 +9,9 @@ import { CalenderIcon } from "../SVGAids/SVG"
 
 const EventsCTASection = () => {
   return (
-      <section className="pink-bg w-full relative">
+      <section className="pink-bg w-full h-fit relative overflow-y-hidden  overflow-x-hidden ">
+
+        
         <div className="absolute z-10 top-0 md:scale-[200%] scale-[209.288%] w-[1022px] h-full opacity-[0.12]">
             <DotGridBG />
         </div>

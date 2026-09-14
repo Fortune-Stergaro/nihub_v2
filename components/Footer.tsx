@@ -29,7 +29,7 @@ const Footer = () => {
   return (
     <footer  className='text-white base-purple-bg-2 pt-14 pb-8 lg:px-32 px-6 '>
       <div className='flex md:flex-row flex-col items-start  md:justify-between md:gap-auto gap-10  '>
-        <div className='min-w-[320px] w-[60%]'>
+        <div className='md:min-w-[320px] md:w-[60%]'>
           <Image  src='/assets/images/nihub-logo-light.png' alt='NIHUB logo' width={186} height={40} />
           <p className={` ${baiJamjuree_400.className} text-[14px] font-normal leading-[24.5px] pt-4  max-w-[320px] `} >NIHUB — a community of innovators shaping the future through technology, collaboration, and growth.</p>
         </div>

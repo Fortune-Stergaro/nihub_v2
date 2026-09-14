@@ -46,10 +46,10 @@ const Navbar = () => {
 
 
 
-            <nav className='md:block hidden'>
-                <ul>
+            <nav className='md:block hidden w-full'>
+                <ul className="w-full flex  flex-wrap items-center justify-center gap-4">
                     {navLinks.map((link) => (
-                        <li key={link.href} className="inline-block mx-4">
+                        <li key={link.href} className=" ">
                             <Link href={link.href} className="transition-colors hover:text-[#2B1043]  text-[#2B1043A6]">
                                 <Bai_600 className='text-[13px]  capitalize' text={link.label}/>
                             </Link>

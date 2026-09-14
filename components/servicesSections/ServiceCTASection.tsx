@@ -50,8 +50,8 @@ const ServiceCTASection = () => {
                         </div>
                         <div className="flex flex-col  justify-center gap-4">
                              {AccessPoints.map((item, index) => (
-                                <div key={index} className="flex  items-center  p-5 rounded-[14px] bg-[#FFFFFF12] border border-[#FFFFFF1F]">
-                                    <div className="md:pr-0 pr-2">
+                                <div key={index} className="flex md:flex-row flex-col md:items-center  p-5 rounded-[14px] bg-[#FFFFFF12] border border-[#FFFFFF1F]">
+                                    <div className="md:pr-0 pr-2 md:pb-0 pb-3">
                                         <Bai_700 className="text-[14px] text-white " text={item.header} />
                                         <Pop_400 className="text-[12px] text-[#FFFFFF8C]" text={item.desc} />
                                     </div>
@@ -59,11 +59,11 @@ const ServiceCTASection = () => {
                                 </div>
                             ))}
                                 
-                            <div className="flex md:flex-row flex-col md:items-center pt-2 gap-3 text-[13px]">
-                                <div style={{boxShadow: '0px 4px 18px 0px #FFB23473'}} className="w-fit h-fit rounded-[10px]">
+                            <div className="flex flex-wrap md:items-center pt-2    text-[13px]">
+                                <div style={{boxShadow: '0px 4px 18px 0px #FFB23473'}} className="w-fit h-fit rounded-[10px] mb-3">
                                     <LinkTemp1 text="Get Started Free" href="#" className=" base-purple-text bg-[#FFB234] py-3 px-6 rounded-[10px] gap-2  " linkIndex={0} />
                                 </div>
-                                <LinkTemp2 text="Contact Us" href="/" className="border border-[#FFFFFF33] py-3 px-6 w-fit rounded-[10px] gap-2 text-white opacity-85 " linkIndex={1} />
+                                <LinkTemp2 text="Contact Us" href="/" className="border border-[#FFFFFF33] py-3 px-6 w-fit  ml-3 rounded-[10px] gap-2 text-white opacity-85 " linkIndex={1} />
                             </div>
 
                         </div>

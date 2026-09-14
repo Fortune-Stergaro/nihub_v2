@@ -20,15 +20,15 @@ const CommentCard = ({name, title, comment, index} : CommentCardProps) => {
             <Bai_700 text="''" className="text-[44px] leading-[44px] text-[#E0E0E0]" />
         </div>
 
-           <Bai_400 text={comment}  className="base-black-text pt-2 text-[15px] leading-[26.5px]"/>
+           <Bai_400 text={comment}  className="base-black-text pt-2 text-[15px]  smaller-text-12 leading-[26.5px]"/>
 
         <div className='flex items-center pt-6 gap-3'>
             <div className={`w-10 h-10 rounded-full text-[12px] text-white ${initialsBgs[index % 3]} flex items-center justify-center`}>
                 <Bai_700 text={ getInitials(name)}  />
             </div>
             <div>
-                <Bai_700  text={name} className="base-black-text text-[13px]" /> 
-                <Pop_400 text={title} className="base-grey-text-100 text-[12px]" />
+                <Bai_700  text={name} className="base-black-text text-[13px] smaller-text-10" /> 
+                <Pop_400 text={title} className="base-grey-text-100 text-[12px] smaller-text-9" />
             </div>
 
         </div>

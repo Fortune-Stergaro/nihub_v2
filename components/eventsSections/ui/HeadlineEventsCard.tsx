@@ -47,7 +47,7 @@ const HeadlineEventsCard = ({event} : EventProps ) => {
             <Pop_400 className="text-[14px] base-purple-text-100" text={event.description} />
 
             <div className="pt-4 flex flex-col gap-1.5">
-                <div className="flex items-center gap-4">
+                <div className="flex flex-wrap items-center space-x-4 space-y-1.5">
                     <div className="flex items-center gap-1.5">
                         <CalenderIcon  color={`rgb(${event.rgb})`} width="12" height="12"/>
                         <Jet_400 className="text-[12px] base-purple-text-300" text={event.date}  />
@@ -57,7 +57,7 @@ const HeadlineEventsCard = ({event} : EventProps ) => {
                         <Jet_400 className="text-[12px] base-purple-text-300" text={event.starts} />
                     </div>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex flex-wrap items-center space-x-4 space-y-1.5">
                     <div className="flex items-center gap-1.5">
                         <LocationIcon   color={`rgb(${event.rgb})`} width="11" height="11"/>
                         <Jet_400 className="text-[12px] base-purple-text-300" text={event.venue}  />
@@ -76,14 +76,14 @@ const HeadlineEventsCard = ({event} : EventProps ) => {
                     </div>
                 ))}
             </div>
-            <div className="pt-5 flex items-center gap-3">
+            <div className="pt-5 flex flex-wrap items-center space-x-3">
                 <Link style={{background: `rgb(${event.rgb})`, boxShadow: `0px 4px 14px 0px rgba(${event.rgb}, 0.27);)`}} href={event.registerLink} className="py-2.5 px-5 gap-2 rounded-[10px] w-fit h-fit flex items-center ">
                     <Image  src={TicketIcon} alt="Ticket Icon" width={13} height={13} />
                     <Bai_700 className="text-white text-[13px]" text="Register Now"/>
                 </Link>
 
                 <Link className="flex items-center base-grey-text-100 gap-1.5" href={event.learnMoreLink}>
-                    <Bai_600 className="text-[13px] " text="Learn more" />
+                    <Bai_600 className="text-[13px] p-3 " text="Learn more" />
                     <Image src={TicketIcon} alt="LinkIcon " width={12} height={12}  />
                 </Link>
             </div>

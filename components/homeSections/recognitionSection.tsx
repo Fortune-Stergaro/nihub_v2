@@ -51,12 +51,12 @@ const RecognitionSection = () => {
                 </div>
                 
                 <div className="md:hidden  py-10 px-8 bg-white rounded-2xl mt-12">
-                    <Jet_700 className="tracking-[1.98px] uppercase text-[11px] base-purple-text text-center"  text="Trusted Partners & Sponsors"/>
+                    <Jet_700 className="tracking-[1.98px] uppercase text-[11px] smaller-text-9 base-purple-text text-center"  text="Trusted Partners & Sponsors"/>
                     <div className="pt-8 flex flex-wrap items-center  justify-center gap-5">
 
                         {partners.map((partner, index) => (
                             <div  key={index} style={{boxShadow: "0px 2px 10px 0px #2B104314"}} className="w-fit h-fit rounded-[14px]  "> 
-                                <Bai_700 className="text-[14px] base-black-text w-fit h-fit py-2.5 px-5 rounded-[14px] border border-[#2B104312] " text={partner}/>
+                                <Bai_700 className="text-[14px] smaller-text-11 base-black-text w-fit h-fit py-2.5 px-5 rounded-[14px] border border-[#2B104312] " text={partner}/>
                             </div>
                         ))}
                     </div>

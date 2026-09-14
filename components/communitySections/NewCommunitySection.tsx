@@ -12,7 +12,7 @@ const Benefits = [
 ]
 const NewCommunitySection = () => {
   return (
-    <section className="py-24">
+    <section className="py-24 overflow-x-hidden  overflow-y-hidden  ">
 
         <div className="max-w-[1022px] mx-auto px-8 relative">
             
@@ -44,11 +44,11 @@ const NewCommunitySection = () => {
                             </div>
                         ))}
 
-                        <div className="flex md:flex-row flex-col md:items-center pt-2 gap-3 text-white text-[13px]">
-                            <div style={{boxShadow: '0px 4px 14px 0px #2B104359'}} className="w-fit h-fit rounded-[10px]">
+                        <div className="flex flex-wrap md:items-center pt-2 gap-3 text-white text-[13px]">
+                            <div style={{boxShadow: '0px 4px 14px 0px #2B104359'}} className="w-fit h-fit rounded-[10px] mb-3">
                                 <LinkTemp1 text="Propose a Community" href="/" className=" base-purple-bg py-3 px-6 rounded-[10px] gap-2 w-fit " linkIndex={0} />
                             </div>
-                            <LinkTemp2 text="Contact Us" href="/" className="border border-[#FFFFFF33] py-3 px-6 rounded-[10px] gap-2 w-fit " linkIndex={1} />
+                            <LinkTemp2 text="Contact Us" href="/" className="border border-[#FFFFFF33] py-3 px-6 ml-3 rounded-[10px] gap-2 w-fit " linkIndex={1} />
                         </div>
                     </div>
                 </div>

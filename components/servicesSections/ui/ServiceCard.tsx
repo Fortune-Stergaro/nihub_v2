@@ -51,11 +51,11 @@ const ServiceCard = ({service} :serviceProps) => {
                </div>
                 
     
-                <div style={{borderTop: '1px solid #2B104312'}} className="pt-4 flex items-center gap-3">
+                <div style={{borderTop: '1px solid #2B104312'}} className="pt-4 flex flex-wrap items-center ">
                     <div style={{background: `rgb(${service.rgb})`}} className="w-fit h-fit rounded-[10px]">
                         <LinkTemp1 className="py-2.5 px-4 rounded-[10px] gap-2 text-[13px] text-white w-fit h-fit" href={service.apply.link} text={service.apply.label} linkIndex={0} />
                     </div>
-                    <Link  className='flex items-center w-fit gap-2 base-grey-text-100 text-[12px]' href={service.detailLink}> 
+                    <Link  className='flex items-center w-fit px-3 py-3 base-grey-text-100 text-[12px]' href={service.detailLink}> 
                         <Jet_600 text="Details ↓" />
                     </Link>
                     

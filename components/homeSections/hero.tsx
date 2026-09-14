@@ -23,11 +23,11 @@ const HeroSection = () => {
                     <div>
                         <SectionHeaderText text="IT & Innovation Hub - Futminna" />
                         <div className='md:text-[58px] text-[40px] base-purple-text md:leading-[60.9px] leading-[43px] tracking[-0.5px] uppercase pt-5 '>
-                            <div className='md:block flex items-center gap-3'>
-                                <Bai_700 text='we give' />
+                            <div className='inline items-center gap-3 '>
+                                <Bai_700 text='we give' className='inline'/>
                                 <Bai_700 text='clarity'  className='clarity-text-gradient w-fit '/> 
                             </div>
-                            <Bai_700 text='to ideas' />
+                            <Bai_700 text='to ideas '  className='inline'/>
 
 
                         </div>

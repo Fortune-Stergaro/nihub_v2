@@ -12,7 +12,7 @@ const RecognisedIndustryCard = ({text, index}: {text: string , index: number}) =
             <Image src={icons[index]} alt='icon' width={13} height={13} /> 
         </div>
         
-        <Bai_600 className="text-[13px]" text={text} />
+        <Bai_600 className="text-[13px] smaller-text-11  base-black-text" text={text} />
           
     </div>
   )

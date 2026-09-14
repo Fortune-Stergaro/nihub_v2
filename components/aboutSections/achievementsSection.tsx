@@ -57,7 +57,7 @@ const AchievementsSection = () => {
                             <Jet_700 text="Since 2018" className="uppercase text-[11px] tracking-[1.65px] text-[#FFFFFF66] " />
                             <Bai_700 text="Building the Future, One Innovator at a Time" className="uppercase text-[24px] md:text-[30px] text-white leading-[37.5px]  pt-2 " />
                         </div>
-                        <Link href={'/story'} className="story-link-shadow py-3 px-6 md:mt-0 mt-8 rounded-[10px] bg-[#FFB234] md:w-fit h-fit base-purple-text text-[13px]  transition-all flex items-center  space-x-2  capitalize" >
+                        <Link href={'/story'} className="story-link-shadow py-3 px-6 md:mt-0 mt-8 rounded-[10px] bg-[#FFB234] md:w-fit h-fit base-purple-text text-[13px]  transition-all flex items-center  justify-center space-x-2  capitalize" >
                             <Bai_700  text="View Our Story" />
                             <ArrowRight className="w-3.5 h-3.5" />
                         </Link>
